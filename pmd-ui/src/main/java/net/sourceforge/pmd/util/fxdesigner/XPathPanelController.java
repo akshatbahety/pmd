@@ -197,7 +197,7 @@ public class XPathPanelController implements Initializable, SettingsOwner {
 
         try {
             String xpath = getXpathExpression();
-
+            invalidateResults(false);
             if (StringUtils.isBlank(xpath)) {
                 xpathResultListView.getItems().clear();
                 return;
